@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/tagify.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row p-3">
+
+            <form class="w-100">
+
+              <div class="form-group">
+                <label for="shop-name">餐廳名稱</label>
+                  <div class="input-group">
+                    <textarea id="shop-name" rows="1" cols="100%"></textarea>
+                    </div>
+              </div>
+
+              <div class="form-group">
+                <label for="intro-input">簡介</label>
+                <div class="input-group">
+                    <textarea id="shop-intro" rows="4" cols="100%"></textarea>
+                    </div>
+                </div>
+
+
+              <div class="form-group">
+                
+                <label for="dishName">菜式名稱</label>
+                 <div class="input-group">
+                    <textarea id="dish-name" rows="1" cols="100%"></textarea>
+                    </div>
+              </div>
+
+              <div class="form-group">
+
+                <label for="dish-comment">菜式介紹</label>
+                 <div class="input-group">
+                    <textarea id="dish-comment" rows="4" cols="100%"></textarea>
+                    </div>
+
+                </div>
+
+
+              <!--Marks-->
+               <div class="form-group">
+
+                <label>餐廳評分</label> 
+
+                <!--Type-->
+                <div class="input-group mb-1">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text blue-bg">味道：</div>
+                    </div>
+                    <select class="custom-select" id="taste-marks">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                </div>
+
+                <!--Type-->
+                <div class="input-group mb-1">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text green-bg">環境：</div>
+                    </div>
+                    <select class="custom-select" id="place-marks">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                </div>
+
+                <!--Type-->
+                <div class="input-group mb-1">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text red-bg">服務：</div>
+                    </div>
+                    <select class="custom-select" id="serve-marks">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                </div>
+
+                <!--Type-->
+                <div class="input-group mb-1">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text orange-bg">價錢：</div>
+                    </div>
+                    <select class="custom-select" id="price-marks">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                </div>
+
+                <!--Type-->
+                <div class="input-group mb-1">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text darkgreen-bg">CP值：</div>
+                    </div>
+                    <select class="custom-select" id="cp-marks">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                </div>
+
+                <!--Type-->
+                <div class="input-group mb-1">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text purple-bg">回頭：</div>
+                    </div>
+                    <select class="custom-select" id="return-marks">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                </div>
+
+              </div>
+
+
+              <!--餐廳地址-->
+              <div class="form-group">
+                <label for="shop-address">餐廳地址</label>
+                <div class="input-group">
+                    <textarea id="shop-address" rows="3" cols="100%"></textarea>
+                    </div>
+                </div>
+
+               <!--hashtag-->
+              <div class="form-group">
+                <label for="hash-input">#Hashtag</label>
+                <div class="input-group">
+                    <textarea id="hash-input" rows="4" cols="100%"></textarea>
+                    </div>
+                </div>
+
+
+
+
+              <button id="gen-btn" class="btn btn-primary">Generate</button>
+            </form>
+
+
+
+        <br>
+
+        <div id="result" class="" style="width: 100%;
+                                    height: auto;
+                                    border: 1px solid black;">
+                                        
+                                    </div>
+
+
+    </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="js/tagify.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>

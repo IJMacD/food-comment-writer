@@ -1,0 +1,39 @@
+html{
+	font-size: 14px;
+}
+
+body{ background: #f5f5f5; }
+
+textarea{
+	border: 1px solid #0000001f;
+    background: #f1f1f1;
+    padding: 6px;
+    letter-spacing: .5px;
+    transition: .3s;
+}
+
+	textarea:hover{
+		background: #fff;
+	}
+
+
+select.custom-select{
+	border: none;
+}
+
+.input-group .input-group-text{
+    border: 1px solid transparent;
+    color: white;
+    width: 70px;
+}
+
+
+.blue-bg{ background: #03A9F4; }
+.green-bg {background: #009688; }
+.red-bg{ background: #f30000; }
+.orange-bg{ background: #ff6d00; }
+.darkgreen-bg{background: #607d8b;}
+.purple-bg{background: #673ab7; }
+
+
+.tagify{ width: 100%; }
